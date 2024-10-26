@@ -1,0 +1,12 @@
+
+.leaflet-container{
+    width: 90vw;
+    height: 85vh;
+    border-radius: 20px;
+    border: 2px solid black;
+    z-index: 0;
+}
+
+/* mapa.css */
+
+

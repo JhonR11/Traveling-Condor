@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.menu-item-text {
+  color: white;
+  font-family: "Helvetica", sans-serif;
+  font-size:medium;
+
+  color: whitesmoke;
+}
+.Salir{
+  font-size: 100%;
+  font-weight: bold;
+  color: red;
+
+}
+.Txtx{
+  color:#12A150;
+}
+.NavbarT{
+  font-size: 100%;
+  font-weight:400;
+  color: rgb(0, 0, 0);
+}
+.holder{
+  border-radius: 20px;
+  background:rgb(25, 0, 255);
+  color: #ff0000;
+  transition: all 0.5s;
+}
+body{
+  font-family: "Helvetica", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height: 100%;
+}
+.TextLogo{
+  font-family: "Helvetica", sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.Text2{
+  font-family: "Helvetica", sans-serif;
+  font-size: large;
+  font-weight:bolder;
+  color: whitesmoke;
+}
+.TextSecond{
+  font-family: "Helvetica", sans-serif;
+  
+  color: rgb(0, 0, 0);
+}
+
+
+h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height: 100%;
+
+}
+
+h1.h1{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height: 100%;
+}
+h2.cardtitulo{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  height: 100%;
+}
+
+.contenedorprincipal{
+  border-radius: 2px solid #0000;
+  border: 1px solid #0000;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 2px;
+  display: inline-flex;
+  transition: all 0.6s;
+
+
+}
+.contenedormapa{
+  transition:all 0.5s;
+  
+}
+.contenedorseleccion{
+transition:all 0.5s;
+border: 1px solid #000000;
+border-radius: 10px;
+}
+.contenedorseleccion.inicio {
+  // Ajustes específicos cuando se selecciona el componente Inicio
+  height: 0%; // Por ejemplo, ajustar el alto
+  width: 0%; // Por ejemplo, ajustar el ancho
+  border: 0px;
+  border-radius: 0px;
+}
+
+
+.tabla{
+ display: flex;
+ border: 1px solid #000000 ;
+ border-radius: 10px;
+ margin: 5px;
+}
+.navbar{
+  background-color: #1d1d1d;
+  display:flex;
+  color: #000000;
+  padding: 1rem 2rem;
+  margin: 7px;
+  border: 1px solid #06ce1a;
+  border-radius: 10px;
+  width: auto;
+}
+.sidebar{
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+  background-color: #000000;
+  border: 1px solid #06ce1a ;
+  border-radius: 10px;
+  margin: 5px;
+
+  ul{
+    list-style: none;
+    padding: 1rem 2rem;
+    li{
+      margin-bottom:1rem ;
+      a{
+        text-decoration: none;
+        &.active{
+          background-color: #06ce1a;
+        }
+      }
+    }
+  }
+  
+}
+.contenedorcard{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100 ;
+    font-style: normal;
+    text-align: center;
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+    overflow-y:scroll;
+    height: auto;
+    max-height: 300px;
+    width: auto; 
+    min-width: 150px;
+    height: 100%;
+    border: 2px solid #444444;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000000(0, 0% ,0%, 0.1);
+    padding: 2px;
+   
+    ul{
+      list-style: none;
+      padding: 0%;
+      li{    
+        a{
+          text-decoration: none;
+        }
+      }
+    }
+}
+.card-wrapper {
+    flex: 0 0 auto; /* Esto asegura que las tarjetas no se encogen */
+    width: 100%;    /* Ajusta el ancho de las tarjetas según tus necesidades */
+  }
+.card{
+    display:inline-block;
+    font-size: 5px;
+    border: 2px solid #111010  ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000000(0, 0% ,0%, 0.1);
+    padding: 5%;
+    margin: 1px;
+    align-items:center;
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    color: #000000;
+    flex: 0 0 auto;
+    
+   
+}
+.carditem{
+    
+    background-color: transparent;
+    color:#000000
+    
+
+}
+.card:hover{
+    border-radius: 20px;
+    background:rgb(80, 203, 63);
+    color: #000000;
+    transition: all 0.5s;   
+}
+.cardtitulo{
+
+    color: #000000;
+    
+}
+
+.logo .codegear{
+  max-width: 88%;
+  height: auto;
+  border-radius: 50%;
+
+}
+.bars{
+  display:inline-flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #000000;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  text-decoration: none;
+  border: 1px;
+  border-radius: 20px;
+  margin: 2px;
+    &.active{
+      background: rgb(4, 104, 31);
+      color: #000000;
+
+    }
+  
+}
+.link:hover{
+  background:rgb(80, 203, 63);
+  color: #000000;
+  transition: all 0.5s;
+
+}
+.active{
+  background: rgb(4, 104, 31);
+  color: #000000;
+}
+.container{
+  display:flex;
+  border-radius: 1px #000;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.nav{
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  width: auto;
+}
+
+.mapa{
+  border: 2px solid #908f8f;
+  border-radius: 10px;
+}
+.efecto{
+  transition: all 0.5s;
+}
+.contenedortabla{
+
+
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 602px){
+  .contenedorprincipal{
+    display:block;
+  }
+}
