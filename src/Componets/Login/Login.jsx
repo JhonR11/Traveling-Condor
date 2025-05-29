@@ -141,6 +141,46 @@ return(
                             <AiOutlineSwapRight className="icon"></AiOutlineSwapRight>
                         </button>
                         </Link>
+                        
+                        <div className="google-login-container" style={{ display: 'flex', justifyContent: 'center', marginTop: '1rem' }}>
+                            <button
+                                type="button"
+                                className="google-login-btn"
+                                onClick={() => window.open('https://accounts.google.com/o/oauth2/v2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=http://localhost:3000/google-callback&response_type=token&scope=email profile', '_self')}
+                                style={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    background: '#fff',
+                                    border: 'none',
+                                    borderRadius: '25px',
+                                    boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+                                    padding: '0.5rem 1.5rem',
+                                    cursor: 'pointer',
+                                    transition: 'transform 0.2s, box-shadow 0.2s',
+                                    fontWeight: 500,
+                                    fontSize: '1rem',
+                                    gap: '0.75rem'
+                                }}
+                                onMouseOver={e => {
+                                    e.currentTarget.style.transform = 'scale(1.05)';
+                                    e.currentTarget.style.boxShadow = '0 4px 16px rgba(66,133,244,0.15)';
+                                }}
+                                onMouseOut={e => {
+                                    e.currentTarget.style.transform = 'scale(1)';
+                                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(0,0,0,0.08)';
+                                }}
+                            >
+                                <svg width="24" height="24" viewBox="0 0 48 48">
+                                    <g>
+                                        <path fill="#4285F4" d="M44.5 20H24v8.5h11.7C34.8 33.1 30.1 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.1 8.1 2.9l6.1-6.1C34.5 6.5 29.6 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.7-.2-4z"/>
+                                        <path fill="#34A853" d="M6.3 14.7l7 5.1C15.5 16.2 19.4 13 24 13c3.1 0 5.9 1.1 8.1 2.9l6.1-6.1C34.5 6.5 29.6 4 24 4c-7.2 0-13.3 4.1-16.7 10.7z"/>
+                                        <path fill="#FBBC05" d="M24 44c5.5 0 10.4-1.8 14.2-4.9l-6.6-5.4C29.7 35.6 27 36.5 24 36.5c-6.1 0-10.8-2.9-13.7-7.2l-7 5.4C7.7 39.9 15.2 44 24 44z"/>
+                                        <path fill="#EA4335" d="M44.5 20H24v8.5h11.7c-1.2 3.2-4.2 5.5-7.7 5.5-4.6 0-8.3-3.7-8.3-8.3s3.7-8.3 8.3-8.3c2.5 0 4.7.9 6.3 2.4l6.1-6.1C38.7 13.1 31.9 10 24 10c-8.8 0-16.3 4.1-20.7 10.7l7 5.1C8.5 31.1 15.4 36 24 36c5.5 0 10.4-1.8 14.2-4.9l-6.6-5.4C29.7 35.6 27 36.5 24 36.5c-6.1 0-10.8-2.9-13.7-7.2l-7 5.4C7.7 39.9 15.2 44 24 44z"/>
+                                    </g>
+                                </svg>
+                                <span style={{ color: '#444' }}>Iniciar sesión con Google</span>
+                            </button>
+                        </div>
 
                         <span className="footerDiv flex">
                             Olvidaste tu contraseña? <a href="">Click Here</a>

@@ -9,8 +9,10 @@
 
 
 .flex{
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
+    font-weight: normal;
 }
 
 .grid{
@@ -26,7 +28,9 @@ html{
 }
 
 a{
+    color: blueviolet;
     text-decoration: none;
+    
 }
 
 li{
@@ -49,7 +53,7 @@ li{
 
 .showMessage{
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     background:rgb(243, 106, 106);
     border-radius: 3px;
     text-align: center;
@@ -143,7 +147,8 @@ li{
 
 
                 .text{
-                    color: rgb(216, 216, 216);
+                    color: rgb(68, 68, 68);
+                    font-weight:normal
                 }
 
                 .btn{
@@ -153,6 +158,7 @@ li{
                     border-radius: 10px;
                     font-weight: 400;
                     transition: .3s ease;
+               
 
                     &:hover{
                      background: rgb(57, 127, 149);
@@ -255,8 +261,10 @@ li{
                 }
 
                 .forgotPassword{
+                    color: rgb(27, 27, 27);
                     font-size: 14px;
-                    color: black;
+                    font-weight: normal;
+                    
                     opacity: .7;
                     text-align: center;
 
